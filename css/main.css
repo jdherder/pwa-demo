@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  align-items: center;
+  background-color: #D3DCDD;
+  color: #0EADD4;
+  display: flex;
+  font-family: Courier New, Courier, monospace;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.clock {
+  align-items: baseline;
+  display: flex;
+  font-size: 4.5rem;
+}
+
+.clock__hour {
+  font-weight: bold;
+}
+
+.clock__separator {
+  animation-duration: 1s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  align-self: center;
+  font-size: 2.5rem;
+}
+
+.clock__minute {
+  font-weight: bold;
+}
+
+.clock__second {
+  align-self: baseline;
+  font-size: 1rem;
+  margin-left: 0.25rem;
+  opacity: 0.5;
+}
+
+.clock__period {
+  color: #B4B4B4;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
